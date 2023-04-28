@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 //Import de paginas para seguir com as rotas
 import Home from './routes/Home';
 import NewPost from './routes/NewPost';
+import Mod from './routes/Mod';
 
 import './index.css'
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([//faz a rota de navegação das páginas/def
       {
         path: "/new",
         element: <NewPost />
+      },
+      {
+        path: "/mod",
+        element: <Mod />
       },
     ],
   },
