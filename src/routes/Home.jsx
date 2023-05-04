@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 
 import { Link } from "react-router-dom";
 
-import "./Home.css";
+import "../style/Home.css";
 
 const Home = () => {
 

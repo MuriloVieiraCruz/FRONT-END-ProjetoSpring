@@ -1,8 +1,8 @@
 import blogFetch from "../axios/config";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Mod.css";
-import "../components/Modal.css";
+import "../style/Mod.css";
+import "../style/Modal.css";
 //import Modal from "../components/Modal";
 
 const Mod = () => {

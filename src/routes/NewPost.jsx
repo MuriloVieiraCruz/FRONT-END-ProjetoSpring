@@ -6,7 +6,7 @@ import { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import "./NewPost.css";
+import "../style/NewPost.css";
 
 const NewPost = () => {
   const navigate = useNavigate();
