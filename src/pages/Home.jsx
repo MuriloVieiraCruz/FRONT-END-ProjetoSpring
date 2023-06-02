@@ -1,9 +1,6 @@
 import blogFetch from "../axios/config";
-
 import { useState, useEffect } from "react"
-
 import { Link } from "react-router-dom";
-
 import "../style/Home.css";
 
 const Home = () => {
@@ -15,7 +12,7 @@ const Home = () => {
 
     try {
       //resposta da API
-      const response = await blogFetch.get("/todos");
+      const response = await blogFetch.get("/poscontroller/todos");
 
       const data = response.data;
       setTodos(data);

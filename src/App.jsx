@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
-import { Outlet } from 'react-router-dom';
-import './App.css'
+import './style/App.css'
+import MainRoutes from './routes/routes';
+
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className = "container">
-        <Outlet />
+        <MainRoutes />
       </div>
     </div>
   )

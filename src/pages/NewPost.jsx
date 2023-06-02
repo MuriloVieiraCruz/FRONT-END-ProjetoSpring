@@ -1,6 +1,6 @@
 //forma de comunicação com a API
 import blogFetch from "../axios/config";
-
+import React from 'react';
 //Gerenciar os valores que estão nos inputs
 import { useState } from "react";
 
@@ -20,7 +20,7 @@ const NewPost = () => {
 
     const post = JSON.parse(JSON.stringify({titulo, conteudo, userId: 1}));
 
-    await blogFetch.post("/inserir", post,
+    await blogFetch.post("/poscontroller/inserir", post,
     );
 
     navigate("/");

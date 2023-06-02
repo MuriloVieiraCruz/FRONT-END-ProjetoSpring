@@ -1,0 +1,41 @@
+.back {
+    background-color: #0e1217;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-items: center;
+    height: 500px;
+    width: auto;
+    border-radius: 20px;
+  }
+
+  .column {
+    padding: 10px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .formPassword,
+  .formEmail {
+    color: #fff;
+    width: 500px;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formBotao {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .botao {
+    background-color: #1890ff;
+    color: #fff;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }

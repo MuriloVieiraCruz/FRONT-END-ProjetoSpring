@@ -1,25 +1,42 @@
-import { Link } from "react-router-dom";
-
-import '../style/Navbar.css'
+import { BrowserRouter as Router, Link, useNavigate } from "react-router-dom";
+import "../style/Navbar.css";
 
 const Navbar = () => {
-  return (
-    <nav className ="navbar">
-        <h2>
-            <Link to={`/`}>Blog</Link>
-        </h2>
-        <ul>
-            <li>
-                <Link to={`/mod`}>Mod</Link>
-            </li>
-            <li>
-                <Link to={`/new`} className="new-btn">
-                    Novo Post
-                </Link>
-            </li>
-        </ul>
-    </nav>
-  )
-}
+  const navigate = useNavigate();
 
-export default Navbar
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
+
+  return (
+    <nav className="navbar">
+      <h2>
+        <button onClick={() => handleNavigate("/")}>Blog</button>
+      </h2>
+      <ul className="fundo">
+        <li>
+          <button onClick={() => handleNavigate("/login")}>Mod</button>
+        </li>
+        <li>
+          <button
+            className="newbtn"
+            onClick={() => handleNavigate("/new")}
+          >
+            New Post
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+const App = () => {
+  return (
+    <Router>
+      <Navbar />
+      {/* Outros componentes e rotas aqui */}
+    </Router>
+  );
+};
+
+export default App;
