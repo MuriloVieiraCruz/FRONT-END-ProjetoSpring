@@ -2,7 +2,6 @@ import Navbar from './components/Navbar';
 import './style/App.css'
 import MainRoutes from './routes/routes';
 
-
 function App() {
   return (
     //inserção dos componentes definidos no main "Outlet"
