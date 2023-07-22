@@ -17,7 +17,7 @@ export default function MainRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-
+                <Route index element={<Home />} />
                 <Route path="/new" element={<NewPost />} />
                 <Route path="/login" element={<Login />} />
                 <Route element={<RequireAuth  allowedRoles={[ROLES.admin]}  />}>

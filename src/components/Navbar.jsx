@@ -1,29 +1,24 @@
-import { BrowserRouter as Router, Link, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router, useNavigate } from "react-router-dom";
 import "../style/Navbar.css";
 
-const Navbar = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = (path) => {
-    navigate(path);
-  };
+  const Navbar = () => {
 
   return (
     <nav className="navbar">
       <h2>
-        <button onClick={() => handleNavigate("/")}>Blog</button>
+        <a className="btnBlog" href="/">Blog</a>
       </h2>
       <ul className="fundo">
         <li>
-          <button onClick={() => handleNavigate("/login")}>Mod</button>
+          <a className="btnBlog" href="/login">Mod</a>
         </li>
         <li>
-          <button
+          <a
             className="newbtn"
-            onClick={() => handleNavigate("/new")}
+            href="/new"
           >
             New Post
-          </button>
+          </a>
         </li>
       </ul>
     </nav>
